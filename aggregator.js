@@ -26,10 +26,13 @@ class Aggregator {
     forEach(result.audits, audit => {
       switch (audit.scoreDisplayMode) {
         case 'numeric':
-          this._pushStats(['audits', audit.id], audit.numericValue);
+          this._pushStats(
+            ['audits', audit.id + 'numericValue'],
+            audit.numericValue
+          );
           break;
         case 'binary':
-          this._pushStats(['audits', audit.id], audit.score);
+          this._pushStats(['audits', audit.id + 'score'], audit.score);
           break;
         default:
           break;
