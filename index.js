@@ -16,11 +16,11 @@ const DEFAULT_SINGLE_RUN_SUMMARY_METRICS = [
 ];
 
 const DEFAULT_MULTI_RUN_SUMMARY_METRICS = [
-  'categories.seo.*',
-  'categories.performance.*',
-  'categories.pwa.*',
-  'categories.accessibility.*',
-  'categories.best-practices.*'
+  'categories.seo.score.*',
+  'categories.performance.score.*',
+  'categories.pwa.score.*',
+  'categories.accessibility.score.*',
+  'categories.best-practices.score.*'
 ];
 
 const defaultConfig = {

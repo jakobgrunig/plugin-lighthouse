@@ -25,10 +25,13 @@ class Aggregator {
 
     forEach(result.audits, audit => {
       if (audit.numericValue !== null) {
-        this._pushStats(['audits', audit.id + '-value'], audit.numericValue);
+        this._pushStats(
+          ['audits', audit.id + '.numericValue'],
+          audit.numericValue
+        );
       }
       if (audit.score !== null) {
-        this._pushStats(['audits', audit.id + '-score'], audit.score);
+        this._pushStats(['audits', audit.id + '.score'], audit.score);
       }
     });
   }
